@@ -1,3 +1,7 @@
+span.name {
+    cursor: pointer;
+}
+
 /* Background Colors */
 .normal {
     background-color: #A8A77A;
