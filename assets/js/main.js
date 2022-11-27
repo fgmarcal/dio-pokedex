@@ -1,6 +1,6 @@
 const pokemonList = document.getElementById("pokemonList");
 const loadMoreButton = document.getElementById("loadMoreButton");
-const maxRecord = 151;
+const maxRecord = 1154; //151 first gen pokemon - 1154 all pokemon
 const limit = 10;
 let offset = 0;
 
@@ -10,7 +10,7 @@ function loadPokemonItems (offset, limit) {
         const newHtml = pokemons.map((pokemon) => `
             <li class="pokemon ${pokemon.type}">
                 <span class="number">#${pokemon.number}</span>
-                <span class="name">${pokemon.name}</span> 
+                <a href="card-stats.html" class="name">${pokemon.name}</a> 
 
                 <div class="detail">
                     <ol class="types">

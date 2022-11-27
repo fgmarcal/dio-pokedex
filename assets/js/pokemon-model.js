@@ -5,3 +5,9 @@ class Pokemon {
     types = [];
     photo;
 }
+
+class Card extends Pokemon {
+    height;
+    weight;
+    cardPhoto;
+}
